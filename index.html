@@ -3,166 +3,85 @@
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="Content-Style-Type" content="text/css">
-	<meta http-equiv="Content-Script-Type" content="text/javascript">
-	<title>NESTschool</title>
-	<meta name="Description" content="サイトの説明文">
-	<meta name="Keywords" content="#,#,#,#,#">
-	<link href="style.css" media="screen" rel="stylesheet" type="text/css">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="css/meanmenu.css" />
-	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script src="js/jquery.meanmenu.js"></script>
-	<script>
-	$(document).ready(function() {
-	$('nav').meanmenu({
-		meanScreenWidth: "960", // 表示させるウィンドウサイズ(ブレイクポイント)
-
-	});
-	});
-	</script>
-
-
-
+    <title>NESTschool</title>
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
-	<header class="cf">
-		<h1 id="logo">
-			<a href="#">
-				<img src="images/logo.png" alt="まごころと優しさを大切に ネストクリニック">
-			</a>
-		</h1>
-		<nav>
-			<ul class="header-nav">
-				<li><a href="#">ネストクリニックについて</a></li>
-				<li><a href="#">担当医の紹介</a></li>
-				<li><a href="#">医院内の紹介</a></li>
-				<li><a href="#">アクセス</a></li>
-			</ul>
-		</nav>
-	</header>
+    <header id="header">
+        <h1><a href="#">NESTschool</a></h1>
+        <p id="nav_btn">
+            <a href="#">
+                <img src="images/header-menu.png" width="23">
+            </a>
+        </p>
+    </header>
 
-	<div id="mainimage">
-		<img src="images/mainimage.jpg" alt="" />
-	</div>
+    <div id="mainimage">
+        <img src="images/mainimage.jpg" alt="Web学科 Designer専攻 生徒募集中！めざせ、Webデザイナー！">
+    </div>
 
-	<div id="container">
+    <section id="news">
+        <header id="news_header" class="cf">
+            <h1>お知らせ</h1>
+            <p id="more"><a href="#">一覧</a></p>
+        </header>
+        <article class="news_list cf">
+            <a href="#" class="cf">
+                <p class="thumb">
+                    <img src="images/thumb.png">
+                </p>
+                <p class="date">2015/12/12</p>
+                <h1>「ウェブデザイナー専攻科」クラスの受講者を募集しています！</h1>
+            </a>
+        </article>
+        <article class="news_list cf">
+            <a href="#" class="cf">
+                <p class="thumb">
+                    <img src="images/thumb.png">
+                </p>
+                <p class="date">2015/12/12</p>
+                <h1>「ウェブデザイナー専攻科」クラスの受講者を募集しています！</h1>
+            </a>
+        </article>
+        <article class="news_list cf">
+            <a href="#" class="cf">
+                <p class="thumb">
+                    <img src="images/thumb.png">
+                </p>
+                <p class="date">2015/12/12</p>
+                <h1>「ウェブデザイナー専攻科」クラスの受講者を募集しています！</h1>
+            </a>
+        </article>
+        <article class="news_list cf">
+            <a href="#" class="cf">
+                <p class="thumb">
+                    <img src="images/thumb.png">
+                </p>
+                <p class="date">2015/12/12</p>
+                <h1>「ウェブデザイナー専攻科」クラスの受講者を募集しています！</h1>
+            </a>
+        </article>
+    </section>
 
-		<div id="about">
-			<h2>ネストクリニックの強み</h2>
-			<p>
-				ネストクリニックの強みの文章がここに入ります。<br>ネストクリニックの強みの文章がここに入ります。ネストクリニックの強みの文章がここに入ります。
-			</p>
-		</div>
-
-		<div id="service">
-			<ul class="cf">
-				<li>
-					<a href="#">
-						<p class="thumb"><img src="images/test.jpg" /></p>
-						<p class="title">小児科</p>
-						<p class="text">小児科に関する説明文をここに入れます。小児科に関する説明文をここに入れます。</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<p class="thumb"><img src="images/test.jpg" /></p>
-						<p class="title">小児科</p>
-						<p class="text">小児科に関する説明文をここに入れます。</p>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<p class="thumb"><img src="images/test.jpg" /></p>
-						<p class="title">小児科</p>
-						<p class="text">小児科に関する説明文をここに入れます。</p>
-					</a>
-				</li>
-			</ul>
-		</div>
-
-		<div class="cf" id="content-bottom">
-		<div id="news">
-			<h2>お知らせ</h2>
-			<ul id="news-list">
-				<li>
-					<a href="#">
-						2016.12.12
-						<span class="news-title">お知らせがここに入ります。</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						2016.12.12
-						<span class="news-title">お知らせがここに入ります。</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						2016.12.12
-						<span class="news-title">お知らせがここに入ります。</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						2016.12.12
-						<span class="news-title">お知らせがここに入ります。</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						2016.12.12
-						<span class="news-title">お知らせがここに入ります。</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						2016.12.12
-						<span class="news-title">お知らせがここに入ります。</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-
-		<div id="sidebar">
-			<ul>
-				<li id="side-tel"><a href="#">お電話でのご予約はこちら</a></li>
-				<li id="side-blog"><a href="#">院長のブログ</a></li>
-				<li id="side-voice"><a href="#">お客様の声</a></li>
-			</ul>
-		</div>
-
-	</div>
-	</div>
-
-	<footer>
-		<div id="footer-wrap" class="cf">
-			<p id="footer-logo"><img src="images/logo_footer.png" /></p>
-			<ul id="footer-nav">
-				<li><a href="#">ネストクリニックについて</a></li>
-				<li><a href="#">担当医の紹介</a></li>
-				<li><a href="#">医院内の紹介</a></li>
-				<li><a href="#">アクセス</a></li>
-			</ul>
-		</div>
-		<p id="copy">copyright Campus inc. All Rights Reserved.</p>
-	</footer>
-
-
+    <section id="footer_nav">
+        <ul>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">このサイトについて</a></li>
+            <li><a href="#">個人情報保護方針</a></li>
+            <li><a href="#">交通アクセス</a></li>
+            <li><a href="#">資料請求</a></li>
+        </ul>
+    </section>
+    <footer id="footer" class="cf">
+        <p id="footer-title">NESTschool</p>
+        <p id="footer-copy">©2015 Campus inc.</p>
+    </footer>
 
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
 
 
 
